@@ -1,0 +1,276 @@
+/* Public */
+@font-face {
+    font-family: Eng;
+    src: url(./font/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Eng;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* nav start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7FC7FA;
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+    background-color: #07FFC3;
+    border-radius: 4px;
+}
+
+.navbar_icons {
+    list-style: none;
+    display: flex;
+}
+
+.navbar_icons li {
+    padding: 0px 2px;
+}
+
+.navbar_toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px; 
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .navbar_toggleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+}
+
+/* nav end */
+
+
+/* main (1/2 - profile) start */
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+
+.main_profile {
+    width: 28%;
+    height: 100%;
+    background-image: url(./image/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main_icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px;
+}
+
+.area_profile {
+    height: 400px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.area_profile a {
+    font-size: 34px;
+    font-weight: 500px;
+    color: black;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .main_profile {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./image/main.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .area-profile a {
+        font-size: 40px;
+        font-weight: 500px;
+        color: black;
+    }
+
+    .serch {
+        display: none;
+    }
+
+}
+
+/* main (1/2 - profile) end */
+
+
+/* main (2/2 - home) start */
+.main_home {
+    width: 100%;
+    height: 100vh;
+}
+
+.home_account {
+    list-style: none;
+    width: auto;
+}
+
+.home_account h2 {
+    font-size: 35px;
+}
+
+.home_account p {
+    margin-top: -20px;
+    font-size: 18px;
+}
+
+.home_list {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_list li a {
+    color: black;
+    font-size: 100px;
+}
+
+.home_list li {
+    width: 70%;
+    border: solid 2px;
+    padding: 0 100px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+
+    .home_list {
+        justify-content: space-around;
+    }
+    
+    .home_list li {
+        width: 70%;
+        padding: 0 65px;
+    }
+
+    .home_list li a {
+        color: black;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .main_home {
+        display: none;
+    }
+}
+
+/* main (2/2 - home) end */
+
+
+
+/* icon size */ 
+.logo_image {
+    width: 30px;
+}
+
+.twitter {
+    width: 30px;
+}
+
+.facebook {
+    width: 30px;
+}
+
+.square {
+    width: 26px;
+}
+
+.serch {
+    width: 30px;
+    height: 30px;
+}
+
+.logo2_image {
+    width: 50px;
+    height: 50px;
+}
+
+.home_list img {
+    width: 70px;
+    height: 70px;
+}
